@@ -1,6 +1,104 @@
-# Getting Started with Create React App
+# LEGEND  🗽
+### Your comic Marketplace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🔗 https://github.com/aoliverasd/Legends.git
+
+
+------------
+This is a Comic Market Place made using React that shows a list of comics with their image, title, status, isbn and price.
+
+------------
+
+&nbsp;
+
+#### USER STORIES  📄
+
+>Get a list with comics
+
+>Get a new page with comic details
+
+>other
+
+>other
+
+>other
+
+&nbsp;
+
+### UI DESIGN
+
+# Smartphone
+&nbsp;
+>MOBILE
+->![mainPageMobile](https://user-images.githubusercontent.com/...)<-
+&nbsp;
+![detailPageMobile](https://user-images.githubusercontent.com/....)
+&nbsp;
+>DETAIL PAGE
+![detailpage-Desktop](https://user-images.githubusercontent.com/...)
+&nbsp;
+
+# Desktop
+&nbsp;
+>MAIN PAGE
+![main-Smartphone](https://user-images.githubusercontent.com/...)
+&nbsp;
+>DETAIL PAGE
+![detailpage-Smartphone](https://user-images.githubusercontent.com/...)
+
+![foto](/src/images/BTF.jpg "la foto")
+
+&nbsp;
+
+#### TECHNOLOGIES ⚙️
+>JavaScript with React
+
+>Bootstrap
+
+>Axios
+
+>Java
+
+&nbsp;
+
+#### TOOLS 🔧
+>Api server: API Rest
+
+>other
+
+&nbsp;
+
+#### NON FUNCTIONAL ITEMS 🔘
+>The app must have a Continuous Integration & Continuous Deployment point of view. 
+
+>other.
+
+&nbsp;
+
+#### NEXT STEPS 👣
+>An operative form for add a comic to sell
+
+>A favourite button
+
+>other
+
+&nbsp;
+
+#### THANKS TO ✔️
+All the team, the hackaton organizers, Factoria F5 and Thoughtworks.
+
+
+
+------------
+
+
+&nbsp;
+
+
+------------
+# To start a React App
+
+This project was bootstrapped with [Create React App]
 
 ## Available Scripts
 
@@ -38,33 +136,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
