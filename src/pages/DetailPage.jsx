@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header/Header";
 import Search from "../components/search/Search";
-import Card from "../components/card/Card";
+import ComicCard from "../components/comicCard/ComicCard";
 import Footer from "../components/footer/Footer";
 
 function DetailPage() {
@@ -9,7 +9,7 @@ function DetailPage() {
     <>
       <Header />
       <Search />
-      <Card />
+      <ComicCard />
       <div>DetailPage</div>
       <Footer />
     </>
