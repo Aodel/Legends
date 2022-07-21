@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Stack from 'react-bootstrap/Stack';
-import logoBuho from '../header/logoBuho.png'
+import logoBuho from '../../assets/img/logoBuho.png'
 
 
 function Header() {
