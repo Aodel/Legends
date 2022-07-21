@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Stack from 'react-bootstrap/Stack';
 
 function Header() {
   return (
@@ -16,11 +17,10 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Button variant="warning">Subir cómic</Button>{' '} 
-            
-
-           <Button variant="warning"  direction="horizontal" gap={3} >Regístrate</Button>{' '} 
-           
+            <Stack gap={3} className="d-flex flex-row">
+              <Button variant="warning">Subir cómic</Button>{' '} 
+              <Button variant="warning"  direction="horizontal" gap={3} >Regístrate</Button>{' '}  
+            </Stack>
           </Nav>
           <Form className="d-flex">
             <Form.Control
