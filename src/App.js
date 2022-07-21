@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-    <div className='fw-bold fs-3'>HOLA MUNDO!</div>
+
     <HomePage/>
     </>
   );

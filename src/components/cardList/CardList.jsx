@@ -25,7 +25,7 @@ function CardList() {
   return (
       
   <Row sm={1} md={2} lg={"auto"} fluid>
-    {comics.map(item =>(
+    {comics.reverse().map(item =>(
       <Col xs={12} md={2} lg={3} key={item.id} className="d-grid justify-content-center">     
           <Card style={{cursor : 'pointer', width: '25rem', }} className="align-items-end my-2">
             <Card.Img variant="top" style={{ height:'80%'}} src={`${item.thumbnail.path}.${item.thumbnail.extension}`} />

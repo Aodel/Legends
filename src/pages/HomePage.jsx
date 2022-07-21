@@ -14,8 +14,6 @@ function HomePage() {
     <>
     
       <Header />
-      <Search />
-
       <CardList />
       <Footer />
 
