@@ -10,6 +10,7 @@
 
 
 .footer{
+    margin-top: 50px;
     border-top: black solid 3px;
     background-color: #DD3C48;
     display: flex;
