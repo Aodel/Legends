@@ -9,7 +9,7 @@ function DetailPage() {
     <>
       <Header />
       <Search />
-      <ComicCard />
+      {/*<ComicCard />*/}
       <div>DetailPage</div>
       <Footer />
     </>

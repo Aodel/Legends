@@ -3,48 +3,47 @@ import { Row, Col, Card, Container } from "react-bootstrap";
 import Link from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import "../cardList/cardList.css"
+import ComicCard from "../comicCard/ComicCard";
 
 function CardList() {
   const apiUrl =
-    "https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=3189be3503287e3df629857ce15d59e6&hash=cf6a9776c1b8521c81ca954cd05f310e";
+    "https://gateway.marvel.com:443/v1/public/comics?ts=3000&apikey=c8ddc405fae663f25d5aae45bac426cc&hash=648ac7a873f5e371d1e7929a23ade05d";
 
   const [comics, setComics] = useState([]);
 
   useEffect(() => {
     axios
       .get(apiUrl)
-      .then((res) => {
-        setComics(res.data);
+      .then(res => {
+        setComics(res.data.data.results);
         console.log(res.data);
       })
-      .catch((error) => console.log(error));
+      .catch(error => console.log(error));
   }, []);
 
   return (
-
-
-<Row xs={1} md={2} className="g-4">
-        
-          <Col /*key={key} comic={comic}*/>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+      
+  <Row xs={1} md={2} lg={3} className="g-4">
+    {comics.map(item =>(
+      <Col xs={6} md={3} key={item.id}>     
+          <Card style={{cursor : 'pointer'}}>
+            <Card.Img variant="top" src={`${item.thumbnail.path}.${item.thumbnail.extension}`} />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+              <Card.Title>{item.title}</Card.Title>
+              <Card.Text>ISBN: {item.isbn}
               </Card.Text>
+              <Card.Text>issueNumber: {item.issueNumber}
+              </Card.Text>
+              <Col>
+                <button className="buttonExp">Comprar</button> 
+              </Col>
             </Card.Body>
           </Card>
-        </Col>
-      
+    </Col>
+      ))} 
     </Row>
-  );
-
-  
-  
-}
+    )}
 
 export default CardList;
 

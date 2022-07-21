@@ -1,20 +1,17 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card'
 
-function ComicCard({comic}) {
-  return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>{comic.title}</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-  );
-}
+// function ComicCard({comic}) {
+//   return (
+//     <div class="card" style="width: 18rem;">
+//                 <img src="${img}" class="card-img-top" alt="${title}">
+//                 <div class="card-body">
+//                     <h5 class="card-title">${id} - ${title} - ${gender}</h5>
+//                     <p class="card-text">${director}</p>
+//                     <a href="${link}" class="btn btn-primary">Filmaffinity Ficha</a>
+//                 </div>
+//             </div>
+//   );
+// }
 
-export default ComicCard;
+//export default ComicCard;
