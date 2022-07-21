@@ -1,0 +1,35 @@
+@media screen and (max-width:800px){
+    .footer{display: block !important;}
+
+    .copy{
+        margin-left: 20px !important;   
+    
+    }
+       
+}
+
+
+.footer{
+    border-top: black solid 3px;
+    background-color: #DD3C48;
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.contactos{
+    margin: 30px 35px 30px;
+
+    
+}
+
+.copy{
+    margin-left: 840px;
+
+
+}
