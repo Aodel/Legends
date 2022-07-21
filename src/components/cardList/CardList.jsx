@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import Stack from 'react-bootstrap/Stack';
 import "../cardList/cardList.css"
 
+
 function CardList() {
   const apiUrl =
     "https://gateway.marvel.com:443/v1/public/comics?ts=3000&apikey=c8ddc405fae663f25d5aae45bac426cc&hash=648ac7a873f5e371d1e7929a23ade05d";
@@ -23,7 +24,10 @@ function CardList() {
   }, []);
 
   return (
-      
+      <div> 
+            <h1 className= "title">"Todo gran poder conlleva una gran responsabilidad." </h1>
+        <h2 className= "subtitle">¿Cuál será el tuyo?</h2>
+        <p className= "slogan">El super marketplace de compra/venta de cómics número uno de esta galaxia </p>
   <Row sm={1} md={2} lg={"auto"} fluid>
     {comics.reverse().map(item =>(
       <Col xs={12} md={2} lg={3} key={item.id} className="d-grid justify-content-center">     
@@ -44,6 +48,7 @@ function CardList() {
     </Col>
       ))} 
     </Row>
+    </div>
     )}
 
 export default CardList;

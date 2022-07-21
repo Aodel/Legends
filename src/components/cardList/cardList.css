@@ -9,3 +9,30 @@ height: 2vh;
 .btnState{
     background-color: #52C41A;
 }
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    color: #DD3C48;
+
+
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    color: #142972;
+    font-size: 2.5em;
+    
+
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    color: #142972;
+    font-size: 1.5em;
+    padding-bottom: 3em ;
+    
+}
