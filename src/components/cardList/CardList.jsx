@@ -37,7 +37,7 @@ function CardList() {
               </Card.Text>
               <Stack direction="horizontal" gap={5}>
                 <button className="btn btn-lg btnState text-white " >Precintado</button> 
-                <button className="btn btn-lg buttonExp text-white ms-4">Comprar</button>
+                <button className="btn btn-lg buttonExp text-white ms-4" onClick={`https://gateway.marvel.com:443/v1/public/comics${item.id}`}>Comprar</button>
               </Stack>
             </Card.Body>
           </Card>
