@@ -10,11 +10,11 @@
 
 
 .footer{
-    margin-top: 50px;
     border-top: black solid 3px;
     background-color: #DD3C48;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .info{
@@ -24,8 +24,8 @@
 }
 
 .contactos{
-    margin: 30px 30px 30px;
-    color: #142972;
+    margin: 30px 35px 30px;
+    
 
     
 }
