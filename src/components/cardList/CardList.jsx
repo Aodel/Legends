@@ -17,7 +17,6 @@ function CardList() {
       .get(apiUrl)
       .then(res => {
         setComics(res.data.data.results);
-        console.log(res.data);
       })
       .catch(error => console.log(error));
   }, []);
