@@ -16,18 +16,20 @@ import{useState, useEffect} from 'react'
 // md-5 hash: cf6a9776c1b8521c81ca954cd05f310e
 
 // const apiUrl = "https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=3189be3503287e3df629857ce15d59e6"
+const apiUrl = "https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=3189be3503287e3df629857ce15d59e6&hash=cf6a9776c1b8521c81ca954cd05f310e"
 
 function App() {
 
   const [comics, setComics]= useState([])
 
   useEffect(()=>{
-    axios.get("https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=3189be3503287e3df629857ce15d59e6&hash=cf6a9776c1b8521c81ca954cd05f310e")
+    axios.get(apiUrl)
     .then(res=>{
       setComics(res.data)
       console.log(res.data)
     }).catch(error=>console.log(error))
   },[])
+  
   return (
     <>
     <div className='fw-bold fs-3'>HOLA MUNDO!</div>
