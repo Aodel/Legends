@@ -1,3 +1,11 @@
 .img.card-img-top {
 height: 2vh;
 }
+
+.buttonExp{
+    background-color: #142972;
+}
+
+.btnState{
+    background-color: #52C41A;
+}

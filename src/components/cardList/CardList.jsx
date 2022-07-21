@@ -3,8 +3,8 @@ import { Row, Col, Card, Container } from "react-bootstrap";
 import Link from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Stack from 'react-bootstrap/Stack';
 import "../cardList/cardList.css"
-import ComicCard from "../comicCard/ComicCard";
 
 function CardList() {
   const apiUrl =
@@ -24,20 +24,21 @@ function CardList() {
 
   return (
       
-  <Row xs={1} md={2} lg={3} className="g-4">
+  <Row sm={1} md={2} lg={"auto"} fluid>
     {comics.map(item =>(
-      <Col xs={6} md={3} key={item.id}>     
-          <Card style={{cursor : 'pointer'}}>
-            <Card.Img variant="top" src={`${item.thumbnail.path}.${item.thumbnail.extension}`} />
-            <Card.Body>
+      <Col xs={12} md={2} lg={3} key={item.id} className="d-grid justify-content-center">     
+          <Card style={{cursor : 'pointer', width: '25rem', }} className="align-items-end my-2">
+            <Card.Img variant="top" style={{ height:'80%'}} src={`${item.thumbnail.path}.${item.thumbnail.extension}`} />
+            <Card.Body className="d-flex flex-column mx-auto">
               <Card.Title>{item.title}</Card.Title>
               <Card.Text>ISBN: {item.isbn}
               </Card.Text>
               <Card.Text>issueNumber: {item.issueNumber}
               </Card.Text>
-              <Col>
-                <button className="buttonExp">Comprar</button> 
-              </Col>
+              <Stack direction="horizontal" gap={5}>
+                <button className="btn btn-lg btnState text-white " >Precintado</button> 
+                <button className="btn btn-lg buttonExp text-white ms-4">Comprar</button>
+              </Stack>
             </Card.Body>
           </Card>
     </Col>
