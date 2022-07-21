@@ -1,11 +1,15 @@
 # LEGEND  🗽
 ### Your comic Marketplace
 
-🔗 https://github.com/aoliverasd/Legends.git
+🔗 http://localhost:3000/
 
 
 ------------
 This is a Comic Market Place made using React that shows a list of comics with their image, title, status, isbn and price.
+
+&nbsp;
+
+Presentamos un Comic Marketplace desarrollado con React que nos muestra una lista de comics con su imagen, título, estado, isbn y precio.
 
 ------------
 
@@ -14,14 +18,14 @@ This is a Comic Market Place made using React that shows a list of comics with t
 #### USER STORIES  📄
 
 >Get a list with comics
+- Como usuario quiero ver un marketplace con comics
 
 >Get a new page with comic details
+- Como usuario quiero hacer click sobre un comic y que se habra en otra página
 
->other
+>The comic card should have an iamge and inform about name, state, price and a button to buy it
+- Como usuario la carta de comic debe tener una imagen e informarme sobre el nombre, su estado, el precio y un botón para comparlo.
 
->other
-
->other
 
 &nbsp;
 
@@ -46,8 +50,6 @@ This is a Comic Market Place made using React that shows a list of comics with t
 >DETAIL PAGE
 ![detailpage-Smartphone](https://user-images.githubusercontent.com/...)
 
-![foto](/src/images/BTF.jpg "la foto")
-
 &nbsp;
 
 #### TECHNOLOGIES ⚙️
@@ -57,30 +59,31 @@ This is a Comic Market Place made using React that shows a list of comics with t
 
 >Axios
 
->Java
+>Java with SrpingBoot
 
 &nbsp;
 
 #### TOOLS 🔧
 >Api server: API Rest
 
->other
+>Mockito
 
 &nbsp;
 
 #### NON FUNCTIONAL ITEMS 🔘
->The app must have a Continuous Integration & Continuous Deployment point of view. 
+>The app must be reponsive. 
 
 >other.
 
 &nbsp;
 
 #### NEXT STEPS 👣
->An operative form for add a comic to sell
+>Make the add button operative opening a form
+- Hacer el botón de añadir comic operativo abriendo un formulario
 
->A favourite button
+>Add a comic to sell
+- Añadir un comic para poder venderlo
 
->other
 
 &nbsp;
 
