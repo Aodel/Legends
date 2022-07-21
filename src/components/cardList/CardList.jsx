@@ -4,7 +4,8 @@ import Link from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Stack from 'react-bootstrap/Stack';
-import "../cardList/cardList.css"
+import "../cardList/cardList.css";
+import logoCompleto from '../../assets/img/logoCompleto.png'
 
 
 function CardList() {
@@ -23,8 +24,11 @@ function CardList() {
   }, []);
 
   return (
-      <div> 
-            <h1 className= "title">"Todo gran poder conlleva una gran responsabilidad." </h1>
+      <div>
+       <div className="legendLogo">
+        <img src={logoCompleto}  className="legendM" alt= "logoLengend"/>
+       </div>
+        <h1 className= "title">"Todo gran poder conlleva una gran responsabilidad." </h1>
         <h2 className= "subtitle">¿Cuál será el tuyo?</h2>
         <p className= "slogan">El super marketplace de compra/venta de cómics número uno de esta galaxia </p>
   <Row sm={1} md={2} lg={"auto"} fluid>

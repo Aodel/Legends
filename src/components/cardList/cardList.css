@@ -10,10 +10,18 @@ height: 2vh;
     background-color: #52C41A;
 }
 
+.legendM{
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
 .title {
     display: flex;
     justify-content: center;
-    padding-top: 2em;
+    
     color: #DD3C48;
 
 
