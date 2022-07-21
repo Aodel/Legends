@@ -3,33 +3,40 @@ import { Row, Col, Card, Container } from "react-bootstrap";
 import Link from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { comicService } from "../../service/comicService";
 
 function CardList() {
-  const apiUrl =
-    "https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=3189be3503287e3df629857ce15d59e6&hash=cf6a9776c1b8521c81ca954cd05f310e";
+  // const apiUrl =
+  //   "https://gateway.marvel.com/v1/public/comics?ts=1&apikey=3189be3503287e3df629857ce15d59e6&hash=cf6a9776c1b8521c81ca954cd05f310e";
 
   const [comics, setComics] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(apiUrl)
-      .then((res) => {
-        setComics(res.data);
-        console.log(res.data);
-      })
-      .catch((error) => console.log(error));
-  }, []);
+    getAllComics();
+  },[]);
+
+
+
+  const getAllComics = () => {
+    comicService.getAllComics().then((res) => {
+      console.log(res)
+      setComics(res.data.data.result);
+    })
+
+  };
+
+
 
   return (
 
 
 <Row xs={1} md={2} className="g-4">
-        
-          <Col /*key={key} comic={comic}*/>
+        {comics.map((comic, key) => (
+          <Col key={key} comic={comic}>
           <Card>
             <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>{comic.title}</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -38,7 +45,7 @@ function CardList() {
             </Card.Body>
           </Card>
         </Col>
-      
+      ))}
     </Row>
   );
 

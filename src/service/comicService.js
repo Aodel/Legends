@@ -1,16 +1,20 @@
 import axios from "axios"
 
 const apiUrl =
-    "https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=3189be3503287e3df629857ce15d59e6&hash=cf6a9776c1b8521c81ca954cd05f310e";
+"https://gateway.marvel.com/v1/public/comics?ts=3000&apikey=c8ddc405fae663f25d5aae45bac426cc&hash=648ac7a873f5e371d1e7929a23ade05d";
+
+// const apiUrl = "https://62863be396bccbf32d71c5a2.mockapi.io";
+
+
 
 export const comicService = {
   getAllComics() {
-    const comics = axios.get(apiUrl + "/comics").then((res) => res.data);
+    const comics = axios.get(apiUrl).then((res) => res.data.data.result);
     return comics;
   },
 
   getComicById(id) {
-    const comics = axios.get(apiUrl + "/comics/" +id).then((res) => res.data);
+    const comics = axios.get(apiUrl + "/movies/" +id).then((res) => res.data);
     return comics;
   }
 }

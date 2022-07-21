@@ -16,7 +16,7 @@ function HomePage() {
       <div>I am a HomePage</div>
       
       {/* <ComicCard /> */}
-      {/* <CardList /> */}
+      <CardList />
       <Footer />
 
     </>
