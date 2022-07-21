@@ -22,15 +22,6 @@ import{useState, useEffect} from 'react'
 
 function App() {
 
-  // const [comics, setComics]= useState([])
-
-  // useEffect(()=>{
-  //   axios.get(apiUrl)
-  //   .then(res=>{
-  //     setComics(res.data)
-  //     console.log(res.data)
-  //   }).catch(error=>console.log(error))
-  // },[])
 
   return (
     <>

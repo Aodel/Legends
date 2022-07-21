@@ -27,13 +27,12 @@ function Header() {
               type="search"
               placeholder="Search"
               className="me-2"
-              aria-label="Search"
+              
             />
             <Button variant="warning">Búscalo por ISBN</Button>{' '}
             
           </Form>
         </Navbar.Collapse>
-            
       
       </Container>
     </Navbar>
