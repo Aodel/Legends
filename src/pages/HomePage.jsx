@@ -7,6 +7,8 @@ import ComicCard from '../components/comicCard/ComicCard'
 
 
 
+
+
 function HomePage() {
   return (
     <>
